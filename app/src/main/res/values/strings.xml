@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">NanoDegree</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="radio_car">Cars</string>
+    <string name="radio_mobil">Mobil</string>
+    <string name="radio_laptop">Laptop</string>
+
+</resources>

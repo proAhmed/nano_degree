@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/gray"
+    android:paddingRight="15dp"
+    android:paddingLeft="15dp"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#E4E2E4"
+
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/purple"
+        android:textSize="24sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Add Product"/>
+    <ImageView
+        android:id="@+id/imgAdd"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:src="@drawable/product"/>
+
+
+        <RadioGroup
+            android:id="@+id/radio"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content" >
+
+            <RadioButton
+                android:id="@+id/radioCar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/radio_car"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/radioMobil"
+                android:layout_width="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content"
+                android:text="@string/radio_mobil"
+                android:checked="false" />
+
+            <RadioButton
+                android:id="@+id/radioLaptop"
+                android:layout_width="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content"
+                android:text="@string/radio_laptop"
+                android:checked="false" />
+        </RadioGroup>
+    
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edProductName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/purple"
+            android:singleLine="true"
+            android:hint="Product Name"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edProductDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/purple"
+            android:singleLine="true"
+            android:hint="Product Description"
+           />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:singleLine="true"
+            android:textColor="@color/purple"
+            android:hint="Price"
+            android:inputType="numberDecimal" />
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/purple"
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"
+        android:text="Personal data"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edMobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="16dp"
+                android:singleLine="true"
+                android:textColor="@color/purple"
+                android:inputType="phone"
+                android:hint="Mobile       "
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:layout_marginTop="16dp"
+                android:singleLine="true"
+                android:textColor="@color/purple"
+                android:hint="Email       "
+                />
+        </android.support.design.widget.TextInputLayout>
+
+
+
+
+    <Button
+        android:id="@+id/btnAddProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:background="@color/purple"
+        android:text="Add Product"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="18sp" />
+</LinearLayout>
+</ScrollView>
